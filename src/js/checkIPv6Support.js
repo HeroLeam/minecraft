@@ -3,7 +3,7 @@ function checkIPv6Support() {
 
     fetch(ipv6TestUrl, { mode: 'no-cors' })
         .then(function (response) {
-            showMessage("Você tem suporte a IPv6!");
+            // showMessage("Você tem suporte a IPv6!");
         })
         .catch(function (error) {
             showMessage("Você não tem suporte a IPv6.");
