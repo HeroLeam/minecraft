@@ -1,0 +1,257 @@
+:root {
+    --verdeMinecraft: #4CAF50;
+    --marromTerra: #8D6E63;
+    --azulCeu: #87CEEB;
+    --cinzaPedra: #A9A9A9;
+    --amareloSol: #FFD700;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--verdeMinecraft);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg_herofield.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0.5vw);
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    background-color: var(--verdeMinecraft);
+    color: var(--amareloSol);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.10);
+    padding: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header a {
+    margin: 0 10px;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+header .home {
+    float: left;
+}
+
+header .menu {
+    float: right;
+}
+
+main {
+    color: white;
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .conteudo {
+    max-width: 960px;
+    margin: 60px 0 60px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .plugins {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+main .plugins:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: justify;
+    text-align-last: right;
+}
+
+main .plugins:nth-child(odd) {
+    text-align: justify;
+    text-align-last: left;
+}
+
+main .imagemPlugin {
+    max-width: 80px;
+    margin: 0 20px 0 20px;
+}
+
+main .plugins>p {
+    max-width: 600px;
+}
+
+main .logo {
+    margin-top: 60px;
+    width: 180px;
+}
+
+main .titulo-server {
+    margin: 10px;
+    font-size: 2.5em;
+}
+
+main .subtitulo {
+    margin-bottom: 10px;
+}
+
+main .titulo-plugins {
+    margin: 10px;
+}
+
+main .div-server {
+    padding: 10px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, var(--verdeMinecraft) 20%, var(--amareloSol));
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    animation: jump 1.8s infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.075);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+main .div-server:hover {
+    animation: none;
+    transform: scale(1.075);
+    box-shadow: 0px 0px 15px 0px white;
+}
+
+main .material-symbols-outlined {
+    padding-left: 4px;
+    font-weight: 300;
+}
+
+main .link-external {
+    color: var(--azulCeu);
+}
+
+main .sobre {
+    margin-bottom: 60px;
+}
+
+main .paragrafo {
+    margin-bottom: 20px;
+}
+
+main video {
+    width: 720px;
+}
+
+main hr {
+    width: 100%;
+    margin: 20px;
+}
+
+iframe {
+    margin: 20px 0 20px;
+    width: 90vw;
+    height: 720px;
+}
+
+strong {
+    color: var(--amareloSol);
+}
+
+footer {
+    background-color: var(--marromTerra);
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--cinzaPedra);
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+footer a:hover {
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.aviso-popup {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    background-image: linear-gradient(135deg, var(--verdeMinecraft) 20%, var(--amareloSol));
+    color: white;
+    border-radius: 10px;
+    opacity: 0;
+    animation: popup 3s;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

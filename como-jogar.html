@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroField Minecraft</title>
+
+    <link rel="shortcut icon" href="./src/images/logo_herofield.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="home">
+            <a href="index.html">HeroField</a>
+        </div>
+        <div class="menu">
+            <a href="como-jogar.html">Como jogar?</a>
+            <a href="mapa.html">Mapa Online</a>
+            <a href="plugins.html">Plugins</a>
+            <a href="https://discord.gg/xg6a3Tqef2" target="_blank">Discord</a>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo">
+            <h1>Como jogar?</h1>
+            <p class="paragrafo">Necessário usar Forge para se conectar ao servidor para ter acesso a conexão IPv6.</p>
+            <div class="div-server">
+                <p>mc.herofield.ddnsgeek.com</p>
+                <span class="material-symbols-outlined">content_copy</span>
+            </div>
+            <div class="aviso"></div>
+            <hr>
+            <h2 class="subtitulo">Minecraft Original</h2>
+            <p class="paragrafo">Basta baixar a versão do <strong><a class="link-external" href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.4.html" target="_blank">Forge 1.20.4</a></strong>, instale e se divirta.</p>
+            <h2 class="subtitulo">TLauncher</h2>
+            <p class="paragrafo">Basta baixar a versão do Java <strong><a class="link-external" href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html" target="_blank">JDK 17</a></strong> compatível com sua versão de máquina (win 86x ou 64x, linux e etc.) e instale normalmente, após instalado vá ate o Tlauncher e depois configurações, na seção de <strong>Seleção Java</strong>, clique em <strong>Mudar</strong>, clique em <strong>Procurar</strong> e seleciona a pasta da versão instalada recentemente, depois de carregar a versão instalada, em <strong>JAVA Argumentos</strong> apague o útlimo argumento <strong>-Djava.net.preferIPv4Stack=true</strong>, salve, e selecione a nova versão com os argumento ajustados. Pronto só jogar.</p>
+            <p class="paragrafo">Video explicativo abaixo;</p>
+            <video controls>
+              <source src="./src/images/jdk17.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+    <footer>
+        <a href="https://linktr.ee/heroleam" target="_blank">by HeroLeam</a>
+    </footer>
+
+    <script src="./src/js/copyToClipboard.js"></script>
+</body>
+
+</html>
