@@ -264,3 +264,57 @@ footer a:hover {
         opacity: 0;
     }
 }
+
+/* ------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .conteudo {
+        padding: 20px;
+    }
+
+    main .plugins {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    main .plugins:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: justify;
+        text-align-last: right;
+    }
+    
+    main .plugins:nth-child(odd) {
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    main .imagemPlugin {
+        width: 80px;
+        margin: 0 20px 0 20px;
+    }
+
+    main .div-server {
+        width: 100%;
+    }
+
+    main .titulo-server,
+    main .subtitulo,
+    main .titulo-plugins {
+        font-size: 1.8em;
+    }
+
+    main video {
+        width: 100%;
+    }
+}
