@@ -84,6 +84,7 @@ main {
     padding: 15px;
     text-align: center;
     font-weight: 500;
+    white-space: pre-line;
 }
 
 main .conteudo {

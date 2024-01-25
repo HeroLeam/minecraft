@@ -6,7 +6,7 @@ function checkIPv6Support() {
             // showMessage("Você tem suporte a IPv6!");
         })
         .catch(function (error) {
-            showMessage("Você não tem IPv6 ativo. Entre em contato com seu provedor para estar fazendo a ativação do protocolo IPv6.");
+            showMessage("Você não tem IPv6 ativo.\n" + "Entre em contato com seu provedor para estar fazendo a ativação do protocolo IPv6.");
         });
 }
 
