@@ -270,7 +270,15 @@ footer a:hover {
 @media screen and (orientation: portrait) {
     header,.home, .menu {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    header >div {
+        padding: 10px;
+    }
+
+    header a:hover {
+        transform: scale(1);
     }
 
     main .conteudo {
