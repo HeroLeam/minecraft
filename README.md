@@ -17,4 +17,4 @@ Projeto próprio de um site de divulgação de um servidor de Minecraft Vanilla.
 
 Thiago Leoni Amaral
 
-https://linktr.ee/heroleam
+https://heroleam.github.io/herofield
