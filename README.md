@@ -15,6 +15,6 @@ Projeto próprio de um site de divulgação de um servidor de Minecraft Vanilla.
 
 # Autor
 
-Thiago Leoni Amaral
+Thiago Leoni Amaral aka Heroleam
 
 https://heroleam.github.io/herofield
