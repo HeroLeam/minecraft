@@ -146,6 +146,7 @@ main .titulo-plugins {
 }
 
 main .div-server {
+    margin: 20px;
     padding: 10px;
     width: 260px;
     display: flex;
@@ -180,7 +181,7 @@ main .sobre {
 }
 
 main .paragrafo {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 main video {
