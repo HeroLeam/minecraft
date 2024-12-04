@@ -72,6 +72,15 @@ header .menu {
     float: right;
 }
 
+.hamburger-menu {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: var(--verde);
+    cursor: pointer;
+}
+
 main {
     color: white;
     flex: 1;
@@ -203,19 +212,9 @@ main .paragrafo {
     margin: 20px;
 }
 
-main video {
-    width: 720px;
-}
-
 main hr {
     width: 100%;
     margin: 20px;
-}
-
-iframe {
-    margin: 20px 0 20px;
-    width: 90vw;
-    height: 720px;
 }
 
 strong {
@@ -253,6 +252,73 @@ footer a:hover {
     animation: popup 3s;
 }
 
+/* ------------------------------------------------------------ */
+
+@media screen and (orientation: portrait) {
+
+    .headerContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    header>div {
+        padding: 10px;
+    }
+
+    header a:hover {
+        transform: scale(1);
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--verdeMinecraft);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid var(--marromTerra);
+        z-index: 10;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu a {
+        margin: 5px 0px;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid var(--marromTerra);
+    }
+
+    main .conteudo {
+        padding: 20px;
+    }
+
+    main .imagemPlugin {
+        width: 80px;
+        margin: 0 20px 0 20px;
+    }
+
+    main .div-server {
+        width: 100%;
+    }
+
+    main .titulo-server,
+    main .subtitulo,
+    main .titulo-plugins {
+        font-size: 1.8em;
+    }
+}
+
+/* ------------------------------------------------------------ */
+
 @keyframes jump {
     0% {
         transform: scale(1);
@@ -282,48 +348,5 @@ footer a:hover {
 
     100% {
         opacity: 0;
-    }
-}
-
-/* ------------------------------------------------------------ */
-
-@media screen and (orientation: portrait) {
-
-    header,
-    .home,
-    .menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header>div {
-        padding: 10px;
-    }
-
-    header a:hover {
-        transform: scale(1);
-    }
-
-    main .conteudo {
-        padding: 20px;
-    }
-
-    main .imagemPlugin {
-        width: 80px;
-        margin: 0 20px 0 20px;
-    }
-
-    main .div-server {
-        width: 100%;
-    }
-
-    main .titulo-server,
-    main .subtitulo,
-    main .titulo-plugins {
-        font-size: 1.8em;
-    }
-
-    main video {
-        width: 100%;
     }
 }
